@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Initial code - Casino Craps</title>
+<!--
+	Author: Ellen Bajcar
+	Program: craps_initial.html
+	Date: Summer 2016 
+	Date Updated: May 2020
+	Version: 2.3
+	Purpose: learning Javascript programming (SYST10199)
+	Copyright: This work is the intellectual property of Sheridan College. 
+		Any further copying and distribution outside of class must be within 
+		the copyright law. Posting to commercial sites for profit is prohibited.
+	Description:
+		Casino Craps v.2.3 - procedural, console
+		initial code for assignment 1
+-->	
+<style>
+* { 
+	box-sizing: border-box; 
+}
+body {
+  background: #e0e0e0;
+  font-family: sans-serif;
+  margin: 0 auto;
+  text-align: center;
+}
+main {
+	width: 100%;
+	margin: auto;
+	padding-top: 10px;
+	background-color: white;	
+	padding-bottom: 10px;
+	min-height: 300px;
+}
+aside {
+  width:60%;
+  text-align: center;
+  margin: auto;
+  font-size: 0.8em;
+}
+header h1 {
+  color: #6f6f6f;   
+  font-family: Lato, sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  margin: 20px 0 0;
+  text-align: center;
+  text-shadow: 0 0 0 rgba(0,0,0,.4);
+}
+footer {
+	margin: auto;
+	padding-top: 10px;
+	margin-top: 10px;
+	text-align: center;
+	color: gray;
+	clear: both;
+}
+button {
+	color: tomato;
+	background: #fff;
+	border-radius: 5px;
+	border: 1px solid tomato;
+	font-size: 20px;
+	outline: 0 solid white;
+	width: 100%;
+}
+table {
+  margin: 0 auto;
+	background-color: transparent;
+	width: 400px;
+	text-align: center;	
+}
+td {
+	background-color: transparent;
+	text-align: center;
+	vertical-align: bottom;
+	border: 1px dotted green;
+}
+var {
+	font-size: 2rem;
+}
+main p {
+	margin: 0;
+	font-size: 0.8rem;
+}
+
+
+/* navigation */
+nav {
+  margin: 20px auto;
+  width: 450px;
+  text-align: center;
+}
+nav a {
+  background-color: #a4a4a4;
+  color: #fff;
+  display: inline-block;
+  font-family: Lato, sans-serif;
+  font-size: 15px;
+  padding: 7px;
+  text-decoration: none;
+}
+nav a.active, nav a:hover {
+  background: #c2c2c2;
+  color: #818181;
+}
+</style>		
+</head>
+<body>
+	<header>
+		<h1>Casino Craps</h1>
+	</header>
+	<nav>
+		<a href="#">Casino Craps</a>
+	</nav>  
+	<main>
+  
+		<table>
+			<tr>
+				<td colspan="2"><div id="alpha" class="die"></div><div id="bravo" class="die"></div></td>
+				<td><small>You rolled&hellip;</small><br><var id="total">&nbsp;</var></td>
+			</tr>
+			<tr>
+				<td>
+					<p>STATS</p>
+					<p>Wins: <span id="wins">0</span></p> 
+					<p>Losses: <span id="losses">0</span></p>
+				</td>
+				<td colspan="2">
+					<p id="show" class="show">To start a game, roll the dice!</p>
+				</td>			
+			</tr>
+			<tr>
+				<td><button id="clear">Clear</button></td>
+				<td colspan="2"><button id="roll" class="roll">Roll the dice!</button>	</td>			
+			</tr>			
+		</table>			
+	</main>	
+  <aside hidden>
+    <h4>Instructions</h4>
+    <p>Program to play the casino game of Craps. 
+    At the beginning of the game, the player rolls 
+    a pair of dice and computes the total. If the 
+    total is 2, 3, or 12 (called "craps"), the player 
+    loses. If the total is 7 or 11 (called a "natural"), 
+    the player wins.</p> 
+    <p>If the total is any other number, 
+    that number becomes the "point". From here, the 
+    player keeps rolling the dice until (a) the point 
+    comes up again, in which case the player wins, or 
+    (b) a 7 appears, in which case the player loses. 
+    The numbers 2,3,11, and 12 no longer have special 
+    significance after the first rolls.</p>
+  </aside>  
+	<footer>
+		<address>SYST10199 Web Programming &copy; Sheridan College</address>
+	</footer>
+
+<script>
+/* 	
+	At the beginning of the game, the player rolls a pair of dice 
+	and computes the total. 
+	1. calculate dice1
+	2. calculate dice2
+	3. calculate total
+	4. display in console "Rolling dice: dice1 dice2 total
+*/ 
+
+
+//  If the total is 2, 3, or 12 (called "craps"), the player loses. 
+// 	If the total is 7 or 11 (called a "natural"), the player wins. 
+if (             ){
+
+//	If the total is any other number, that number becomes the "point". 
+
+
+/*
+	From here, the player keeps rolling the dice until 
+	(a) the point comes up again, in which case the player wins, or 
+	(b) a 7 appears, in which case the player loses. 
+	The numbers 2,3,11, and 12 no longer have special 
+	significance after the first rolls.
+*/	  
+  while (true) {
+  /*
+	1. calculate dice1
+	2. calculate dice2
+	3. calculate total
+	4. display in console "Rolling dice: dice1 dice2 total
+	*/
+
+
+// if total == point, announce winner and break out of loop	  
+
+
+// else if total is 7, announce loser and break out of loop
+
+
+// otherwise, keep rolling
+  }    
+}  
+</script>
+</body>
+</html>
