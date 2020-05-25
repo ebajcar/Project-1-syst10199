@@ -34,6 +34,9 @@ Complete all tutorials and exercises for weeks 1 and 2.
 - Complete craps_func.html (functional) - week 2-3
 - Complete craps_oo.html (object-oriented) - week 3
 
+#### Sample output for craps_console.html
+![craps_initial_sample_output.png](craps_initial_sample_output.png)
+
 ## Resources
 
 initial code available: [craps_initial.html](craps_initial.html)
