@@ -27,16 +27,16 @@ Complete all tutorials and exercises for weeks 1 and 2.
 
 ## Requirements
 
-Create a project tree on your local drive, with css and scripts folders. (there is no index.html for this project)
-Use Piazza Q&A to ask questions and discuss snippets of the code.
-Keep all three versions in the project root.
-Complete craps_console.html (procedural, console) - week 2
-Complete craps_func.html (functional) - week 2-3
-Complete craps_oo.html (object-oriented) - week 3
+- Create a project tree on your local drive, with css and scripts folders. (there is no index.html for this project)
+- Use Piazza Q&A to ask questions and discuss snippets of the code.
+- Keep all three versions in the project root.
+- Complete craps_console.html (procedural, console) - week 2
+- Complete craps_func.html (functional) - week 2-3
+- Complete craps_oo.html (object-oriented) - week 3
 
 ## Resources
 
-initial code available: craps_initial.html
+initial code available: [craps_initial.html](craps_initial.html)
 
 ---
 
