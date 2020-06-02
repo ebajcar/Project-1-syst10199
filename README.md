@@ -43,7 +43,7 @@ initial code available: [craps_initial.html](craps_initial.html)
 
 ## Evaluation
 
-Read []() and []()
+Read [How evaluation works](how_evaluation_works.md) and []()
 
 ---
 
