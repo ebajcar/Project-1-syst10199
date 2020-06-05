@@ -41,7 +41,7 @@ Complete all tutorials and exercises for weeks 1 and 2.
 
 initial code available: [craps_initial.html](craps_initial.html)
 
-## Evaluation
+## Evaluation :new:
 
 Read [How evaluation works](how_evaluation_works.md) and [Coding style](coding_style.md)
 
