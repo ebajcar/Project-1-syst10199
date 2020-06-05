@@ -20,6 +20,13 @@ Functional programming paradigm addresses the problems that arise in procedural 
 #### Object-oriented programming paradigm
 Object-oriented programming paradigm also addresses the problems that arise in procedural programming by eliminating global state, but instead of storing state in functions, it is stored in objects.
 
+---
+
+## Evaluation :new:
+
+Read [How evaluation works](how_evaluation_works.md) and [Coding style](coding_style.md)
+
+---
 
 ## Prerequisites
 
@@ -41,9 +48,6 @@ Complete all tutorials and exercises for weeks 1 and 2.
 
 initial code available: [craps_initial.html](craps_initial.html)
 
-## Evaluation :new:
-
-Read [How evaluation works](how_evaluation_works.md) and [Coding style](coding_style.md)
 
 ---
 
