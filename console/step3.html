@@ -13,24 +13,25 @@ function rollBoth() {
 }      
 // STEP 3: we determine the outcome
 function determineOutcome(total) {
-	if ( point == 0 ) {
-		if (total == 7 || total == 11) {
-			console.log("That's a natural. You win!");
-		} else if (total == 2 || total == 3 || total == 12) {
-			console.log("That's craps. You Lose.");		  
-		} else {
-		 point = total;
-		 console.log("Your point is " + point + ". Roll again!)";  
-		}
-	} else {
-    if (total == point) {
-			console.log("You made your point. You win.");
-			point = 0;
+  if ( point === 0 ) {
+    if (total == 7 || total == 11) {
+      console.log("That's a natural. You win!");
+  } else if (total == 2 || total == 3 || total == 12) {
+      console.log("That's craps. You Lose.");		  
+    } else {
+      point = total;
+      console.log("Your point is " + point + ". Roll again!)";  
+    }
+  } else {
+    if (total === point) {
+      console.log("You made your point. You win.");
+      point = 0;
     } else if (total == 7) {	
-			console.log("That's a 7. You lose.");		
-			point = 0;
+      console.log("That's a 7. You lose.");		
+      point = 0;
     } 
-	}
+  }
+}
 
       
       
