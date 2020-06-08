@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Console version - Casino Craps</title>
+    <!--
+	Author: Ellen Bajcar
+	Program: craps_initial.html
+	Date: Summer 2016 
+	Date Updated: May 2020
+	Version: 2.3
+	Purpose: learning Javascript programming (SYST10199)
+	Copyright: This work is the intellectual property of Sheridan College. 
+		Any further copying and distribution outside of class must be within 
+		the copyright law. Posting to commercial sites for profit is prohibited.
+	Description:
+		Casino Craps v.2.3 - procedural, console
+		initial code for assignment 1
+-->
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>Casino Craps</h1>
+    </header>
+    <nav>
+      <a href="#">Casino Craps</a>
+    </nav>
+    <main>
+      <table>
+        <tr>
+          <td colspan="2">
+            <div id="alpha" class="die"></div>
+            <div id="bravo" class="die"></div>
+          </td>
+          <td>
+            <small>You rolled&hellip;</small><br /><var id="total">&nbsp;</var>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>STATS</p>
+            <p>Wins: <span id="wins">0</span></p>
+            <p>Losses: <span id="losses">0</span></p>
+          </td>
+          <td colspan="2">
+            <p id="show" class="show">To start a game, roll the dice!</p>
+          </td>
+        </tr>
+        <tr>
+          <td><button id="clear">Clear</button></td>
+          <td colspan="2">
+            <button id="roll" class="roll">Roll the dice!</button>
+          </td>
+        </tr>
+      </table>
+    </main>
+    <aside>
+      <h4>Instructions</h4>
+      <p>
+        Program to play the casino game of Craps. At the beginning of the game,
+        the player rolls a pair of dice and computes the total. If the total is
+        2, 3, or 12 (called "craps"), the player loses. If the total is 7 or 11
+        (called a "natural"), the player wins.
+      </p>
+      <p>
+        If the total is any other number, that number becomes the "point". From
+        here, the player keeps rolling the dice until (a) the point comes up
+        again, in which case the player wins, or (b) a 7 appears, in which case
+        the player loses. The numbers 2,3,11, and 12 no longer have special
+        significance after the first rolls.
+      </p>
+    </aside>
+    <footer>
+      <address>SYST10199 Web Programming &copy; Sheridan College</address>
+    </footer>
+
+    <script>
+/* 	
+	At the beginning of the game, the player rolls a pair of dice 
+	and computes the total. 
+	1. calculate dice1
+	2. calculate dice2
+	3. calculate total
+	4. display in console "Rolling dice: dice1 dice2 total
+*/ 
+var dice1 = Math.floor((Math.random() * 6) + 1);
+var dice2 = Math.floor((Math.random() * 6) + 1);
+var total = dice1 + dice2; 
+console.log("Rolling dice: " +
+	  dice1 + " + " + dice2 + " = " + total);
+//  If the total is 2, 3, or 12 (called "craps"), the player loses. 
+// 	If the total is 7 or 11 (called a "natural"), the player wins. 
+if (total == 7 || total == 11){
+  console.log("That's a natural. You win!");
+} else if (total == 3 || total == 2 || total == 12) {
+  console.log("That's craps. You Lose.");
+} else {
+//	If the total is any other number, that number becomes the "point". 
+  var point = total;
+  console.log("Your point is " + point);
+/*
+	From here, the player keeps rolling the dice until 
+	(a) the point comes up again, in which case the player wins, or 
+	(b) a 7 appears, in which case the player loses. 
+	The numbers 2,3,11, and 12 no longer have special 
+	significance after the first rolls.
+*/	  
+  while (true) {
+  /*
+	1. calculate dice1
+	2. calculate dice2
+	3. calculate total
+	4. display in console "Rolling dice: dice1 dice2 total
+	*/
+	dice1 = Math.floor((Math.random() * 6) + 1);
+	dice2 = Math.floor((Math.random() * 6) + 1);
+	total = dice1 + dice2; 
+	console.log("Rolling dice: " +
+	  dice1 + " + " + dice2 + " = " + total);
+// if total == point, announce winner and break out of loop	  
+	if (total == point) {
+	  console.log("You made your point. You win.");
+	  break;
+// else if total is 7, announce loser and break out of loop
+	} else if (total == 7) {
+	  console.log("That's a 7. You lose.");
+	  break;
+	}
+// otherwise, keep keep rolling
+  }    
+}  
+    </script>
+  </body>
+</html>
